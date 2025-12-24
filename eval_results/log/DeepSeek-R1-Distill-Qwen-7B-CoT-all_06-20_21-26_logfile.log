@@ -1,0 +1,47 @@
+2025-06-20 21:27:09,037 DEBUG Starting new HTTPS connection (1): stats.vllm.ai:443
+2025-06-20 21:27:09,844 DEBUG https://stats.vllm.ai:443 "POST / HTTP/1.1" 200 None
+2025-06-20 21:27:53,394 DEBUG Starting new HTTPS connection (1): huggingface.co:443
+2025-06-20 21:27:53,655 DEBUG https://huggingface.co:443 "HEAD /datasets/TIGER-Lab/MMLU-Pro/resolve/main/README.md HTTP/1.1" 200 0
+2025-06-20 21:27:53,892 DEBUG https://huggingface.co:443 "HEAD /datasets/TIGER-Lab/MMLU-Pro/resolve/475d58ba0cc18a15fd5d4221f41919199e692331/MMLU-Pro.py HTTP/1.1" 404 0
+2025-06-20 21:27:53,897 DEBUG Starting new HTTPS connection (1): s3.amazonaws.com:443
+2025-06-20 21:27:54,668 DEBUG https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/datasets/TIGER-Lab/MMLU-Pro/TIGER-Lab/MMLU-Pro.py HTTP/1.1" 404 0
+2025-06-20 21:27:54,904 DEBUG https://huggingface.co:443 "GET /api/datasets/TIGER-Lab/MMLU-Pro/revision/475d58ba0cc18a15fd5d4221f41919199e692331 HTTP/1.1" 200 2322
+2025-06-20 21:27:55,148 DEBUG https://huggingface.co:443 "HEAD /datasets/TIGER-Lab/MMLU-Pro/resolve/475d58ba0cc18a15fd5d4221f41919199e692331/.huggingface.yaml HTTP/1.1" 404 0
+2025-06-20 21:27:55,150 DEBUG Starting new HTTPS connection (1): datasets-server.huggingface.co:443
+2025-06-20 21:27:55,958 DEBUG https://huggingface.co:443 "GET /api/datasets/TIGER-Lab/MMLU-Pro/revision/475d58ba0cc18a15fd5d4221f41919199e692331 HTTP/1.1" 200 2322
+2025-06-20 21:27:56,216 DEBUG https://huggingface.co:443 "GET /api/datasets/TIGER-Lab/MMLU-Pro/tree/475d58ba0cc18a15fd5d4221f41919199e692331?recursive=False&expand=False HTTP/1.1" 200 492
+2025-06-20 21:27:56,459 DEBUG https://huggingface.co:443 "POST /api/datasets/TIGER-Lab/MMLU-Pro/paths-info/475d58ba0cc18a15fd5d4221f41919199e692331 HTTP/1.1" 200 218
+2025-06-20 21:27:56,701 DEBUG https://huggingface.co:443 "GET /api/datasets/TIGER-Lab/MMLU-Pro/tree/475d58ba0cc18a15fd5d4221f41919199e692331/data?recursive=False&expand=False HTTP/1.1" 200 475
+2025-06-20 21:27:56,706 DEBUG Starting new HTTPS connection (1): huggingface.co:443
+2025-06-20 21:27:56,957 DEBUG https://huggingface.co:443 "GET /api/datasets/TIGER-Lab/MMLU-Pro/revision/475d58ba0cc18a15fd5d4221f41919199e692331 HTTP/1.1" 200 2322
+2025-06-20 21:27:57,198 DEBUG https://huggingface.co:443 "POST /api/datasets/TIGER-Lab/MMLU-Pro/paths-info/475d58ba0cc18a15fd5d4221f41919199e692331 HTTP/1.1" 200 218
+2025-06-20 21:27:57,448 DEBUG https://huggingface.co:443 "HEAD /datasets/TIGER-Lab/MMLU-Pro/resolve/475d58ba0cc18a15fd5d4221f41919199e692331/dataset_infos.json HTTP/1.1" 404 0
+2025-06-20 21:27:57,699 DEBUG https://huggingface.co:443 "POST /api/datasets/TIGER-Lab/MMLU-Pro/paths-info/475d58ba0cc18a15fd5d4221f41919199e692331 HTTP/1.1" 200 218
+2025-06-20 21:27:57,931 DEBUG https://huggingface.co:443 "POST /api/datasets/TIGER-Lab/MMLU-Pro/paths-info/475d58ba0cc18a15fd5d4221f41919199e692331 HTTP/1.1" 200 218
+2025-06-20 21:27:57,934 DEBUG Attempting to acquire lock 139672722979520 on /hpc2hdd/home/markhaotianw/.cache/huggingface/datasets/_hpc2hdd_home_markhaotianw_.cache_huggingface_datasets_TIGER-Lab___mmlu-pro_default_0.0.0_475d58ba0cc18a15fd5d4221f41919199e692331.lock
+2025-06-20 21:27:57,935 DEBUG Lock 139672722979520 acquired on /hpc2hdd/home/markhaotianw/.cache/huggingface/datasets/_hpc2hdd_home_markhaotianw_.cache_huggingface_datasets_TIGER-Lab___mmlu-pro_default_0.0.0_475d58ba0cc18a15fd5d4221f41919199e692331.lock
+2025-06-20 21:27:57,935 DEBUG open file: /hpc2hdd/home/markhaotianw/.cache/huggingface/datasets/TIGER-Lab___mmlu-pro/default/0.0.0/475d58ba0cc18a15fd5d4221f41919199e692331/dataset_info.json
+2025-06-20 21:27:57,935 DEBUG Attempting to release lock 139672722979520 on /hpc2hdd/home/markhaotianw/.cache/huggingface/datasets/_hpc2hdd_home_markhaotianw_.cache_huggingface_datasets_TIGER-Lab___mmlu-pro_default_0.0.0_475d58ba0cc18a15fd5d4221f41919199e692331.lock
+2025-06-20 21:27:57,935 DEBUG Lock 139672722979520 released on /hpc2hdd/home/markhaotianw/.cache/huggingface/datasets/_hpc2hdd_home_markhaotianw_.cache_huggingface_datasets_TIGER-Lab___mmlu-pro_default_0.0.0_475d58ba0cc18a15fd5d4221f41919199e692331.lock
+2025-06-20 21:27:58,037 DEBUG Attempting to acquire lock 139672709386288 on /hpc2hdd/home/markhaotianw/.cache/huggingface/datasets/TIGER-Lab___mmlu-pro/default/0.0.0/475d58ba0cc18a15fd5d4221f41919199e692331_builder.lock
+2025-06-20 21:27:58,037 DEBUG Lock 139672709386288 acquired on /hpc2hdd/home/markhaotianw/.cache/huggingface/datasets/TIGER-Lab___mmlu-pro/default/0.0.0/475d58ba0cc18a15fd5d4221f41919199e692331_builder.lock
+2025-06-20 21:27:58,038 DEBUG open file: /hpc2hdd/home/markhaotianw/.cache/huggingface/datasets/TIGER-Lab___mmlu-pro/default/0.0.0/475d58ba0cc18a15fd5d4221f41919199e692331/dataset_info.json
+2025-06-20 21:27:58,038 DEBUG Attempting to release lock 139672709386288 on /hpc2hdd/home/markhaotianw/.cache/huggingface/datasets/TIGER-Lab___mmlu-pro/default/0.0.0/475d58ba0cc18a15fd5d4221f41919199e692331_builder.lock
+2025-06-20 21:27:58,038 DEBUG Lock 139672709386288 released on /hpc2hdd/home/markhaotianw/.cache/huggingface/datasets/TIGER-Lab___mmlu-pro/default/0.0.0/475d58ba0cc18a15fd5d4221f41919199e692331_builder.lock
+2025-06-20 21:27:58,826 INFO selected subjects:
+business
+law
+psychology
+biology
+chemistry
+history
+other
+health
+economics
+math
+physics
+computer science
+philosophy
+engineering
+2025-06-20 21:27:58,829 INFO evaluating biology
+2025-06-20 21:30:17,344 INFO 32 size batch costing time: 137.64384603500366

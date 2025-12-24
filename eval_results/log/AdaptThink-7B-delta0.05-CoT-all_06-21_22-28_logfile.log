@@ -1,0 +1,641 @@
+2025-06-21 22:30:07,981 DEBUG Starting new HTTPS connection (1): stats.vllm.ai:443
+2025-06-21 22:30:09,995 DEBUG https://stats.vllm.ai:443 "POST / HTTP/1.1" 200 None
+2025-06-21 22:34:05,297 DEBUG Starting new HTTPS connection (1): huggingface.co:443
+2025-06-21 22:34:05,572 DEBUG https://huggingface.co:443 "HEAD /datasets/TIGER-Lab/MMLU-Pro/resolve/main/README.md HTTP/1.1" 200 0
+2025-06-21 22:34:05,963 DEBUG https://huggingface.co:443 "HEAD /datasets/TIGER-Lab/MMLU-Pro/resolve/475d58ba0cc18a15fd5d4221f41919199e692331/MMLU-Pro.py HTTP/1.1" 404 0
+2025-06-21 22:34:05,970 DEBUG Starting new HTTPS connection (1): s3.amazonaws.com:443
+2025-06-21 22:34:06,769 DEBUG https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/datasets/TIGER-Lab/MMLU-Pro/TIGER-Lab/MMLU-Pro.py HTTP/1.1" 404 0
+2025-06-21 22:34:07,024 DEBUG https://huggingface.co:443 "GET /api/datasets/TIGER-Lab/MMLU-Pro/revision/475d58ba0cc18a15fd5d4221f41919199e692331 HTTP/1.1" 200 2322
+2025-06-21 22:34:07,267 DEBUG https://huggingface.co:443 "HEAD /datasets/TIGER-Lab/MMLU-Pro/resolve/475d58ba0cc18a15fd5d4221f41919199e692331/.huggingface.yaml HTTP/1.1" 404 0
+2025-06-21 22:34:07,271 DEBUG Starting new HTTPS connection (1): datasets-server.huggingface.co:443
+2025-06-21 22:34:08,039 DEBUG https://huggingface.co:443 "GET /api/datasets/TIGER-Lab/MMLU-Pro/revision/475d58ba0cc18a15fd5d4221f41919199e692331 HTTP/1.1" 200 2322
+2025-06-21 22:34:08,294 DEBUG https://huggingface.co:443 "GET /api/datasets/TIGER-Lab/MMLU-Pro/tree/475d58ba0cc18a15fd5d4221f41919199e692331?recursive=False&expand=False HTTP/1.1" 200 492
+2025-06-21 22:34:08,542 DEBUG https://huggingface.co:443 "POST /api/datasets/TIGER-Lab/MMLU-Pro/paths-info/475d58ba0cc18a15fd5d4221f41919199e692331 HTTP/1.1" 200 218
+2025-06-21 22:34:08,792 DEBUG https://huggingface.co:443 "GET /api/datasets/TIGER-Lab/MMLU-Pro/tree/475d58ba0cc18a15fd5d4221f41919199e692331/data?recursive=False&expand=False HTTP/1.1" 200 475
+2025-06-21 22:34:08,795 DEBUG Starting new HTTPS connection (1): huggingface.co:443
+2025-06-21 22:34:09,044 DEBUG https://huggingface.co:443 "GET /api/datasets/TIGER-Lab/MMLU-Pro/revision/475d58ba0cc18a15fd5d4221f41919199e692331 HTTP/1.1" 200 2322
+2025-06-21 22:34:09,511 DEBUG https://huggingface.co:443 "POST /api/datasets/TIGER-Lab/MMLU-Pro/paths-info/475d58ba0cc18a15fd5d4221f41919199e692331 HTTP/1.1" 200 218
+2025-06-21 22:34:09,863 DEBUG https://huggingface.co:443 "HEAD /datasets/TIGER-Lab/MMLU-Pro/resolve/475d58ba0cc18a15fd5d4221f41919199e692331/dataset_infos.json HTTP/1.1" 404 0
+2025-06-21 22:34:10,104 DEBUG https://huggingface.co:443 "POST /api/datasets/TIGER-Lab/MMLU-Pro/paths-info/475d58ba0cc18a15fd5d4221f41919199e692331 HTTP/1.1" 200 218
+2025-06-21 22:34:10,581 DEBUG https://huggingface.co:443 "POST /api/datasets/TIGER-Lab/MMLU-Pro/paths-info/475d58ba0cc18a15fd5d4221f41919199e692331 HTTP/1.1" 200 218
+2025-06-21 22:34:10,588 DEBUG Attempting to acquire lock 140629369323136 on /hpc2hdd/home/markhaotianw/.cache/huggingface/datasets/_hpc2hdd_home_markhaotianw_.cache_huggingface_datasets_TIGER-Lab___mmlu-pro_default_0.0.0_475d58ba0cc18a15fd5d4221f41919199e692331.lock
+2025-06-21 22:34:10,591 DEBUG Lock 140629369323136 acquired on /hpc2hdd/home/markhaotianw/.cache/huggingface/datasets/_hpc2hdd_home_markhaotianw_.cache_huggingface_datasets_TIGER-Lab___mmlu-pro_default_0.0.0_475d58ba0cc18a15fd5d4221f41919199e692331.lock
+2025-06-21 22:34:10,595 DEBUG open file: /hpc2hdd/home/markhaotianw/.cache/huggingface/datasets/TIGER-Lab___mmlu-pro/default/0.0.0/475d58ba0cc18a15fd5d4221f41919199e692331/dataset_info.json
+2025-06-21 22:34:10,595 DEBUG Attempting to release lock 140629369323136 on /hpc2hdd/home/markhaotianw/.cache/huggingface/datasets/_hpc2hdd_home_markhaotianw_.cache_huggingface_datasets_TIGER-Lab___mmlu-pro_default_0.0.0_475d58ba0cc18a15fd5d4221f41919199e692331.lock
+2025-06-21 22:34:10,595 DEBUG Lock 140629369323136 released on /hpc2hdd/home/markhaotianw/.cache/huggingface/datasets/_hpc2hdd_home_markhaotianw_.cache_huggingface_datasets_TIGER-Lab___mmlu-pro_default_0.0.0_475d58ba0cc18a15fd5d4221f41919199e692331.lock
+2025-06-21 22:34:12,801 DEBUG Attempting to acquire lock 140629354781312 on /hpc2hdd/home/markhaotianw/.cache/huggingface/datasets/TIGER-Lab___mmlu-pro/default/0.0.0/475d58ba0cc18a15fd5d4221f41919199e692331_builder.lock
+2025-06-21 22:34:12,802 DEBUG Lock 140629354781312 acquired on /hpc2hdd/home/markhaotianw/.cache/huggingface/datasets/TIGER-Lab___mmlu-pro/default/0.0.0/475d58ba0cc18a15fd5d4221f41919199e692331_builder.lock
+2025-06-21 22:34:12,802 DEBUG open file: /hpc2hdd/home/markhaotianw/.cache/huggingface/datasets/TIGER-Lab___mmlu-pro/default/0.0.0/475d58ba0cc18a15fd5d4221f41919199e692331/dataset_info.json
+2025-06-21 22:34:12,802 DEBUG Attempting to release lock 140629354781312 on /hpc2hdd/home/markhaotianw/.cache/huggingface/datasets/TIGER-Lab___mmlu-pro/default/0.0.0/475d58ba0cc18a15fd5d4221f41919199e692331_builder.lock
+2025-06-21 22:34:12,802 DEBUG Lock 140629354781312 released on /hpc2hdd/home/markhaotianw/.cache/huggingface/datasets/TIGER-Lab___mmlu-pro/default/0.0.0/475d58ba0cc18a15fd5d4221f41919199e692331_builder.lock
+2025-06-21 22:34:13,925 INFO selected subjects:
+business
+law
+psychology
+biology
+chemistry
+history
+other
+health
+economics
+math
+physics
+computer science
+philosophy
+engineering
+2025-06-21 22:34:13,930 INFO evaluating biology
+2025-06-21 22:36:17,205 INFO 32 size batch costing time: 122.39748764038086
+2025-06-21 22:39:06,547 INFO 32 size batch costing time: 169.12855434417725
+2025-06-21 22:40:10,098 DEBUG Resetting dropped connection: stats.vllm.ai
+2025-06-21 22:40:10,834 DEBUG https://stats.vllm.ai:443 "POST / HTTP/1.1" 200 None
+2025-06-21 22:41:27,130 INFO 32 size batch costing time: 140.4809079170227
+2025-06-21 22:42:24,675 INFO 32 size batch costing time: 57.365084171295166
+2025-06-21 22:45:03,391 INFO 32 size batch costing time: 158.64866161346436
+2025-06-21 22:47:51,675 INFO 32 size batch costing time: 168.05827593803406
+2025-06-21 22:49:44,642 INFO 32 size batch costing time: 112.90451502799988
+2025-06-21 22:50:10,913 DEBUG Resetting dropped connection: stats.vllm.ai
+2025-06-21 22:50:11,644 DEBUG https://stats.vllm.ai:443 "POST / HTTP/1.1" 200 None
+2025-06-21 22:51:04,104 INFO 32 size batch costing time: 79.25830268859863
+2025-06-21 22:53:15,875 INFO 32 size batch costing time: 131.58206152915955
+2025-06-21 22:54:23,571 INFO 32 size batch costing time: 67.53661727905273
+2025-06-21 22:57:12,653 INFO 32 size batch costing time: 168.87509894371033
+2025-06-21 22:58:17,211 INFO 32 size batch costing time: 64.39186882972717
+2025-06-21 22:59:20,983 INFO 32 size batch costing time: 63.59586548805237
+2025-06-21 23:00:11,749 DEBUG Resetting dropped connection: stats.vllm.ai
+2025-06-21 23:00:12,493 DEBUG https://stats.vllm.ai:443 "POST / HTTP/1.1" 200 None
+2025-06-21 23:02:15,534 INFO 32 size batch costing time: 174.45294308662415
+2025-06-21 23:05:07,826 INFO 32 size batch costing time: 172.1131136417389
+2025-06-21 23:07:57,316 INFO 32 size batch costing time: 169.3260943889618
+2025-06-21 23:10:12,596 DEBUG Resetting dropped connection: stats.vllm.ai
+2025-06-21 23:10:13,594 DEBUG https://stats.vllm.ai:443 "POST / HTTP/1.1" 200 None
+2025-06-21 23:10:46,323 INFO 32 size batch costing time: 168.8118269443512
+2025-06-21 23:13:12,196 INFO 32 size batch costing time: 145.7624704837799
+2025-06-21 23:15:57,593 INFO 32 size batch costing time: 165.2641134262085
+2025-06-21 23:16:46,559 INFO 32 size batch costing time: 48.855796813964844
+2025-06-21 23:18:47,758 INFO 32 size batch costing time: 121.07726907730103
+2025-06-21 23:20:13,697 DEBUG Resetting dropped connection: stats.vllm.ai
+2025-06-21 23:20:15,700 DEBUG https://stats.vllm.ai:443 "POST / HTTP/1.1" 200 None
+2025-06-21 23:21:39,971 INFO 32 size batch costing time: 172.03336930274963
+2025-06-21 23:22:24,250 INFO 13 size batch costing time: 44.07177472114563
+2025-06-21 23:22:24,288 INFO this batch accu is: 0.6555090655509066, corr: 470.0, wrong: 247.0
+
+2025-06-21 23:22:24,318 INFO evaluating business
+2025-06-21 23:25:12,211 INFO 32 size batch costing time: 167.3938910961151
+2025-06-21 23:27:22,331 INFO 32 size batch costing time: 130.00957679748535
+2025-06-21 23:29:28,907 INFO 32 size batch costing time: 126.45901489257812
+2025-06-21 23:30:15,729 DEBUG Resetting dropped connection: stats.vllm.ai
+2025-06-21 23:30:16,489 DEBUG https://stats.vllm.ai:443 "POST / HTTP/1.1" 200 None
+2025-06-21 23:32:20,916 INFO 32 size batch costing time: 171.81256079673767
+2025-06-21 23:34:58,786 INFO 32 size batch costing time: 157.76785492897034
+2025-06-21 23:37:06,873 INFO 32 size batch costing time: 127.95063877105713
+2025-06-21 23:40:08,877 INFO 32 size batch costing time: 181.96876287460327
+2025-06-21 23:40:16,494 DEBUG Resetting dropped connection: stats.vllm.ai
+2025-06-21 23:40:17,250 DEBUG https://stats.vllm.ai:443 "POST / HTTP/1.1" 200 None
+2025-06-21 23:41:26,256 INFO 32 size batch costing time: 77.13882780075073
+2025-06-21 23:44:23,194 INFO 32 size batch costing time: 176.84950852394104
+2025-06-21 23:46:07,207 INFO 32 size batch costing time: 103.80642771720886
+2025-06-21 23:47:45,923 INFO 32 size batch costing time: 98.56566572189331
+2025-06-21 23:49:58,268 INFO 32 size batch costing time: 132.2427749633789
+2025-06-21 23:50:17,352 DEBUG Resetting dropped connection: stats.vllm.ai
+2025-06-21 23:50:18,100 DEBUG https://stats.vllm.ai:443 "POST / HTTP/1.1" 200 None
+2025-06-21 23:52:53,937 INFO 32 size batch costing time: 175.59640765190125
+2025-06-21 23:55:48,443 INFO 32 size batch costing time: 174.47279834747314
+2025-06-21 23:58:42,185 INFO 32 size batch costing time: 173.66459679603577
+2025-06-22 00:00:18,194 DEBUG Resetting dropped connection: stats.vllm.ai
+2025-06-22 00:00:19,012 DEBUG https://stats.vllm.ai:443 "POST / HTTP/1.1" 200 None
+2025-06-22 00:01:38,728 INFO 32 size batch costing time: 176.42344403266907
+2025-06-22 00:04:27,764 INFO 32 size batch costing time: 168.92072987556458
+2025-06-22 00:07:22,301 INFO 32 size batch costing time: 174.36821722984314
+2025-06-22 00:09:57,860 INFO 32 size batch costing time: 155.36393308639526
+2025-06-22 00:10:19,949 DEBUG Resetting dropped connection: stats.vllm.ai
+2025-06-22 00:10:22,349 DEBUG https://stats.vllm.ai:443 "POST / HTTP/1.1" 200 None
+2025-06-22 00:12:55,755 INFO 32 size batch costing time: 177.75284028053284
+2025-06-22 00:14:54,136 INFO 32 size batch costing time: 118.357506275177
+2025-06-22 00:17:42,413 INFO 32 size batch costing time: 168.1724717617035
+2025-06-22 00:20:22,452 DEBUG Resetting dropped connection: stats.vllm.ai
+2025-06-22 00:20:23,178 DEBUG https://stats.vllm.ai:443 "POST / HTTP/1.1" 200 None
+2025-06-22 00:20:33,125 INFO 32 size batch costing time: 170.67185473442078
+2025-06-22 00:22:29,263 INFO 32 size batch costing time: 115.97496366500854
+2025-06-22 00:25:19,722 INFO 21 size batch costing time: 170.37932181358337
+2025-06-22 00:25:19,878 INFO this batch accu is: 0.7287705956907478, corr: 575.0, wrong: 214.0
+
+2025-06-22 00:25:19,904 INFO evaluating chemistry
+2025-06-22 00:27:46,483 INFO 32 size batch costing time: 145.80866026878357
+2025-06-22 00:30:23,202 DEBUG Resetting dropped connection: stats.vllm.ai
+2025-06-22 00:30:24,796 DEBUG https://stats.vllm.ai:443 "POST / HTTP/1.1" 200 None
+2025-06-22 00:30:29,649 INFO 32 size batch costing time: 162.85085821151733
+2025-06-22 00:33:43,783 INFO 32 size batch costing time: 193.83799600601196
+2025-06-22 00:36:42,117 INFO 32 size batch costing time: 177.99744820594788
+2025-06-22 00:39:43,458 INFO 32 size batch costing time: 181.09749007225037
+2025-06-22 00:40:24,898 DEBUG Resetting dropped connection: stats.vllm.ai
+2025-06-22 00:40:25,637 DEBUG https://stats.vllm.ai:443 "POST / HTTP/1.1" 200 None
+2025-06-22 00:42:45,228 INFO 32 size batch costing time: 181.43482327461243
+2025-06-22 00:45:50,937 INFO 32 size batch costing time: 185.35271620750427
+2025-06-22 00:48:45,960 INFO 32 size batch costing time: 174.65897607803345
+2025-06-22 00:50:25,644 DEBUG Resetting dropped connection: stats.vllm.ai
+2025-06-22 00:50:26,407 DEBUG https://stats.vllm.ai:443 "POST / HTTP/1.1" 200 None
+2025-06-22 00:52:00,488 INFO 32 size batch costing time: 194.28328704833984
+2025-06-22 00:55:14,837 INFO 32 size batch costing time: 194.00905966758728
+2025-06-22 00:58:09,337 INFO 32 size batch costing time: 174.23764038085938
+2025-06-22 01:00:26,509 DEBUG Resetting dropped connection: stats.vllm.ai
+2025-06-22 01:00:27,216 DEBUG https://stats.vllm.ai:443 "POST / HTTP/1.1" 200 None
+2025-06-22 01:01:19,301 INFO 32 size batch costing time: 189.59278917312622
+2025-06-22 01:04:18,403 INFO 32 size batch costing time: 178.7797248363495
+2025-06-22 01:07:31,290 INFO 32 size batch costing time: 192.46229600906372
+2025-06-22 01:10:15,403 INFO 32 size batch costing time: 163.77678561210632
+2025-06-22 01:10:27,318 DEBUG Resetting dropped connection: stats.vllm.ai
+2025-06-22 01:10:28,066 DEBUG https://stats.vllm.ai:443 "POST / HTTP/1.1" 200 None
+2025-06-22 01:13:12,397 INFO 32 size batch costing time: 176.56116390228271
+2025-06-22 01:16:18,741 INFO 32 size batch costing time: 186.16159772872925
+2025-06-22 01:19:08,208 INFO 32 size batch costing time: 169.07124638557434
+2025-06-22 01:20:28,164 DEBUG Resetting dropped connection: stats.vllm.ai
+2025-06-22 01:20:28,875 DEBUG https://stats.vllm.ai:443 "POST / HTTP/1.1" 200 None
+2025-06-22 01:22:14,267 INFO 32 size batch costing time: 185.83559846878052
+2025-06-22 01:24:26,346 INFO 32 size batch costing time: 131.67481923103333
+2025-06-22 01:27:41,965 INFO 32 size batch costing time: 195.26654839515686
+2025-06-22 01:30:28,941 DEBUG Resetting dropped connection: stats.vllm.ai
+2025-06-22 01:30:29,693 DEBUG https://stats.vllm.ai:443 "POST / HTTP/1.1" 200 None
+2025-06-22 01:31:01,787 INFO 32 size batch costing time: 199.49086737632751
+2025-06-22 01:34:07,731 INFO 32 size batch costing time: 185.67159295082092
+2025-06-22 01:37:12,589 INFO 32 size batch costing time: 184.55086135864258
+2025-06-22 01:40:21,520 INFO 32 size batch costing time: 188.70624780654907
+2025-06-22 01:40:29,803 DEBUG Resetting dropped connection: stats.vllm.ai
+2025-06-22 01:40:30,496 DEBUG https://stats.vllm.ai:443 "POST / HTTP/1.1" 200 None
+2025-06-22 01:43:32,177 INFO 32 size batch costing time: 190.2402834892273
+2025-06-22 01:46:24,027 INFO 32 size batch costing time: 171.61105298995972
+2025-06-22 01:49:25,639 INFO 32 size batch costing time: 181.27304434776306
+2025-06-22 01:50:30,598 DEBUG Resetting dropped connection: stats.vllm.ai
+2025-06-22 01:50:31,354 DEBUG https://stats.vllm.ai:443 "POST / HTTP/1.1" 200 None
+2025-06-22 01:52:07,377 INFO 32 size batch costing time: 161.43663430213928
+2025-06-22 01:55:23,031 INFO 32 size batch costing time: 195.31784200668335
+2025-06-22 01:58:33,287 INFO 32 size batch costing time: 189.87453603744507
+2025-06-22 02:00:31,456 DEBUG Resetting dropped connection: stats.vllm.ai
+2025-06-22 02:00:32,212 DEBUG https://stats.vllm.ai:443 "POST / HTTP/1.1" 200 None
+2025-06-22 02:01:33,636 INFO 32 size batch costing time: 180.05275893211365
+2025-06-22 02:04:31,772 INFO 32 size batch costing time: 177.9026780128479
+2025-06-22 02:06:57,583 INFO 32 size batch costing time: 145.56187868118286
+2025-06-22 02:09:39,949 INFO 32 size batch costing time: 162.1263988018036
+2025-06-22 02:10:32,313 DEBUG Resetting dropped connection: stats.vllm.ai
+2025-06-22 02:10:33,053 DEBUG https://stats.vllm.ai:443 "POST / HTTP/1.1" 200 None
+2025-06-22 02:11:19,569 INFO 12 size batch costing time: 99.32063031196594
+2025-06-22 02:11:19,713 INFO this batch accu is: 0.7393992932862191, corr: 837.0, wrong: 295.0
+
+2025-06-22 02:11:19,821 INFO evaluating computer science
+2025-06-22 02:12:53,558 INFO 32 size batch costing time: 93.44128012657166
+2025-06-22 02:15:43,775 INFO 32 size batch costing time: 170.09397959709167
+2025-06-22 02:18:56,214 INFO 32 size batch costing time: 180.26219630241394
+2025-06-22 02:20:33,120 DEBUG Resetting dropped connection: stats.vllm.ai
+2025-06-22 02:20:33,895 DEBUG https://stats.vllm.ai:443 "POST / HTTP/1.1" 200 None
+2025-06-22 02:21:56,710 INFO 32 size batch costing time: 180.31419849395752
+2025-06-22 02:24:42,447 INFO 32 size batch costing time: 165.52377700805664
+2025-06-22 02:27:40,274 INFO 32 size batch costing time: 177.73112773895264
+2025-06-22 02:30:33,708 INFO 32 size batch costing time: 173.25319623947144
+2025-06-22 02:30:33,997 DEBUG Resetting dropped connection: stats.vllm.ai
+2025-06-22 02:30:34,693 DEBUG https://stats.vllm.ai:443 "POST / HTTP/1.1" 200 None
+2025-06-22 02:33:43,463 INFO 32 size batch costing time: 189.61896109580994
+2025-06-22 02:36:32,783 INFO 32 size batch costing time: 168.998774766922
+2025-06-22 02:37:44,220 INFO 32 size batch costing time: 71.34640622138977
+2025-06-22 02:40:34,796 DEBUG Resetting dropped connection: stats.vllm.ai
+2025-06-22 02:40:35,604 DEBUG https://stats.vllm.ai:443 "POST / HTTP/1.1" 200 None
+2025-06-22 02:40:47,001 INFO 32 size batch costing time: 182.65270709991455
+2025-06-22 02:43:33,518 INFO 32 size batch costing time: 166.3448944091797
+2025-06-22 02:44:32,316 INFO 26 size batch costing time: 58.70787811279297
+2025-06-22 02:44:32,463 INFO this batch accu is: 0.6658536585365854, corr: 273.0, wrong: 137.0
+
+2025-06-22 02:44:32,480 INFO evaluating economics
+2025-06-22 02:47:23,996 INFO 32 size batch costing time: 170.92749285697937
+2025-06-22 02:48:05,191 INFO 32 size batch costing time: 41.04719948768616
+2025-06-22 02:50:35,706 DEBUG Resetting dropped connection: stats.vllm.ai
+2025-06-22 02:50:36,438 DEBUG https://stats.vllm.ai:443 "POST / HTTP/1.1" 200 None
+2025-06-22 02:51:10,240 INFO 32 size batch costing time: 184.97731804847717
+2025-06-22 02:52:16,240 INFO 32 size batch costing time: 65.9625883102417
+2025-06-22 02:55:02,202 INFO 32 size batch costing time: 165.95114064216614
+2025-06-22 02:56:26,055 INFO 32 size batch costing time: 83.83914303779602
+2025-06-22 02:59:13,945 INFO 32 size batch costing time: 167.76662707328796
+2025-06-22 03:00:36,541 DEBUG Resetting dropped connection: stats.vllm.ai
+2025-06-22 03:00:37,311 DEBUG https://stats.vllm.ai:443 "POST / HTTP/1.1" 200 None
+2025-06-22 03:02:07,483 INFO 32 size batch costing time: 173.50397086143494
+2025-06-22 03:02:53,789 INFO 32 size batch costing time: 46.220205545425415
+2025-06-22 03:03:49,123 INFO 32 size batch costing time: 55.32638955116272
+2025-06-22 03:06:38,676 INFO 32 size batch costing time: 169.47420525550842
+2025-06-22 03:09:26,700 INFO 32 size batch costing time: 168.0070288181305
+2025-06-22 03:10:37,416 DEBUG Resetting dropped connection: stats.vllm.ai
+2025-06-22 03:10:38,199 DEBUG https://stats.vllm.ai:443 "POST / HTTP/1.1" 200 None
+2025-06-22 03:12:16,150 INFO 32 size batch costing time: 169.35026860237122
+2025-06-22 03:13:53,040 INFO 32 size batch costing time: 96.71876955032349
+2025-06-22 03:16:38,437 INFO 32 size batch costing time: 165.20743823051453
+2025-06-22 03:18:02,232 INFO 32 size batch costing time: 68.07127690315247
+2025-06-22 03:18:52,937 INFO 32 size batch costing time: 50.62830185890198
+2025-06-22 03:20:38,249 DEBUG Resetting dropped connection: stats.vllm.ai
+2025-06-22 03:20:39,058 DEBUG https://stats.vllm.ai:443 "POST / HTTP/1.1" 200 None
+2025-06-22 03:21:37,011 INFO 32 size batch costing time: 164.00528120994568
+2025-06-22 03:22:34,292 INFO 32 size batch costing time: 57.23630237579346
+2025-06-22 03:24:31,258 INFO 32 size batch costing time: 116.93042755126953
+2025-06-22 03:27:22,888 INFO 32 size batch costing time: 171.57169318199158
+2025-06-22 03:28:48,255 INFO 32 size batch costing time: 85.32150554656982
+2025-06-22 03:29:36,615 INFO 32 size batch costing time: 48.23041915893555
+2025-06-22 03:30:39,121 DEBUG Resetting dropped connection: stats.vllm.ai
+2025-06-22 03:30:39,832 DEBUG https://stats.vllm.ai:443 "POST / HTTP/1.1" 200 None
+2025-06-22 03:31:06,876 INFO 32 size batch costing time: 90.17432856559753
+2025-06-22 03:32:07,100 INFO 32 size batch costing time: 60.13450264930725
+2025-06-22 03:33:05,210 INFO 32 size batch costing time: 58.02586054801941
+2025-06-22 03:33:36,751 INFO 12 size batch costing time: 31.42618703842163
+2025-06-22 03:33:36,799 INFO this batch accu is: 0.7037914691943128, corr: 594.0, wrong: 250.0
+
+2025-06-22 03:33:36,831 INFO evaluating engineering
+2025-06-22 03:36:55,162 INFO 32 size batch costing time: 197.5367350578308
+2025-06-22 03:40:25,453 INFO 32 size batch costing time: 208.78954911231995
+2025-06-22 03:40:39,898 DEBUG Resetting dropped connection: stats.vllm.ai
+2025-06-22 03:40:40,625 DEBUG https://stats.vllm.ai:443 "POST / HTTP/1.1" 200 None
+2025-06-22 03:43:43,452 INFO 32 size batch costing time: 197.4901089668274
+2025-06-22 03:47:28,207 INFO 32 size batch costing time: 224.39818000793457
+2025-06-22 03:50:40,700 DEBUG Resetting dropped connection: stats.vllm.ai
+2025-06-22 03:50:41,439 DEBUG https://stats.vllm.ai:443 "POST / HTTP/1.1" 200 None
+2025-06-22 03:50:53,904 INFO 32 size batch costing time: 204.25861883163452
+2025-06-22 03:54:19,963 INFO 32 size batch costing time: 205.44303035736084
+2025-06-22 03:57:42,917 INFO 32 size batch costing time: 202.2601034641266
+2025-06-22 04:00:41,511 DEBUG Resetting dropped connection: stats.vllm.ai
+2025-06-22 04:00:42,304 DEBUG https://stats.vllm.ai:443 "POST / HTTP/1.1" 200 None
+2025-06-22 04:01:11,603 INFO 32 size batch costing time: 208.21498775482178
+2025-06-22 04:04:44,782 INFO 32 size batch costing time: 212.67522048950195
+2025-06-22 04:08:03,019 INFO 32 size batch costing time: 197.6560287475586
+2025-06-22 04:10:42,313 DEBUG Resetting dropped connection: stats.vllm.ai
+2025-06-22 04:10:43,096 DEBUG https://stats.vllm.ai:443 "POST / HTTP/1.1" 200 None
+2025-06-22 04:11:21,655 INFO 32 size batch costing time: 198.20369124412537
+2025-06-22 04:14:50,094 INFO 32 size batch costing time: 207.9153139591217
+2025-06-22 04:18:21,424 INFO 32 size batch costing time: 210.83378291130066
+2025-06-22 04:20:43,129 DEBUG Resetting dropped connection: stats.vllm.ai
+2025-06-22 04:20:43,816 DEBUG https://stats.vllm.ai:443 "POST / HTTP/1.1" 200 None
+2025-06-22 04:21:57,451 INFO 32 size batch costing time: 215.33611226081848
+2025-06-22 04:25:33,814 INFO 32 size batch costing time: 215.90658402442932
+2025-06-22 04:29:04,864 INFO 32 size batch costing time: 210.52222847938538
+2025-06-22 04:30:43,826 DEBUG Resetting dropped connection: stats.vllm.ai
+2025-06-22 04:30:44,559 DEBUG https://stats.vllm.ai:443 "POST / HTTP/1.1" 200 None
+2025-06-22 04:32:30,561 INFO 32 size batch costing time: 205.40868663787842
+2025-06-22 04:35:53,806 INFO 32 size batch costing time: 202.7911720275879
+2025-06-22 04:39:22,631 INFO 32 size batch costing time: 208.22050714492798
+2025-06-22 04:40:44,643 DEBUG Resetting dropped connection: stats.vllm.ai
+2025-06-22 04:40:45,388 DEBUG https://stats.vllm.ai:443 "POST / HTTP/1.1" 200 None
+2025-06-22 04:42:48,209 INFO 32 size batch costing time: 205.08768582344055
+2025-06-22 04:46:17,567 INFO 32 size batch costing time: 208.7034411430359
+2025-06-22 04:49:24,441 INFO 32 size batch costing time: 186.4008595943451
+2025-06-22 04:50:45,415 DEBUG Resetting dropped connection: stats.vllm.ai
+2025-06-22 04:50:46,152 DEBUG https://stats.vllm.ai:443 "POST / HTTP/1.1" 200 None
+2025-06-22 04:53:00,248 INFO 32 size batch costing time: 215.38435888290405
+2025-06-22 04:56:32,142 INFO 32 size batch costing time: 211.13285493850708
+2025-06-22 04:59:49,908 INFO 32 size batch costing time: 197.25660800933838
+2025-06-22 05:00:46,182 DEBUG Resetting dropped connection: stats.vllm.ai
+2025-06-22 05:00:46,963 DEBUG https://stats.vllm.ai:443 "POST / HTTP/1.1" 200 None
+2025-06-22 05:03:28,305 INFO 32 size batch costing time: 217.7394824028015
+2025-06-22 05:07:01,150 INFO 32 size batch costing time: 212.29251146316528
+2025-06-22 05:10:16,230 INFO 32 size batch costing time: 194.48844051361084
+2025-06-22 05:10:47,065 DEBUG Resetting dropped connection: stats.vllm.ai
+2025-06-22 05:10:47,767 DEBUG https://stats.vllm.ai:443 "POST / HTTP/1.1" 200 None
+2025-06-22 05:13:47,483 INFO 32 size batch costing time: 210.71845245361328
+2025-06-22 05:17:08,591 INFO 32 size batch costing time: 200.65781903266907
+2025-06-22 05:19:26,489 INFO 9 size batch costing time: 137.3797745704651
+2025-06-22 05:19:26,738 INFO this batch accu is: 0.5252837977296182, corr: 509.0, wrong: 460.0
+
+2025-06-22 05:19:26,968 INFO evaluating health
+2025-06-22 05:20:47,870 DEBUG Resetting dropped connection: stats.vllm.ai
+2025-06-22 05:20:48,628 DEBUG https://stats.vllm.ai:443 "POST / HTTP/1.1" 200 None
+2025-06-22 05:22:15,855 INFO 32 size batch costing time: 168.371844291687
+2025-06-22 05:25:01,727 INFO 32 size batch costing time: 165.79970908164978
+2025-06-22 05:27:52,035 INFO 32 size batch costing time: 170.2389018535614
+2025-06-22 05:28:53,087 INFO 32 size batch costing time: 61.000303745269775
+2025-06-22 05:29:57,154 INFO 32 size batch costing time: 63.992260694503784
+2025-06-22 05:30:48,731 DEBUG Resetting dropped connection: stats.vllm.ai
+2025-06-22 05:30:49,479 DEBUG https://stats.vllm.ai:443 "POST / HTTP/1.1" 200 None
+2025-06-22 05:32:44,774 INFO 32 size batch costing time: 167.52202653884888
+2025-06-22 05:35:34,176 INFO 32 size batch costing time: 169.06036806106567
+2025-06-22 05:36:48,637 INFO 32 size batch costing time: 74.43641638755798
+2025-06-22 05:39:40,918 INFO 32 size batch costing time: 172.13845491409302
+2025-06-22 05:40:49,524 DEBUG Resetting dropped connection: stats.vllm.ai
+2025-06-22 05:40:50,259 DEBUG https://stats.vllm.ai:443 "POST / HTTP/1.1" 200 None
+2025-06-22 05:42:27,078 INFO 32 size batch costing time: 166.12930488586426
+2025-06-22 05:45:18,254 INFO 32 size batch costing time: 171.01376461982727
+2025-06-22 05:46:24,315 INFO 32 size batch costing time: 66.02157926559448
+2025-06-22 05:49:12,000 INFO 32 size batch costing time: 167.56589794158936
+2025-06-22 05:50:00,234 INFO 32 size batch costing time: 48.17555022239685
+2025-06-22 05:50:50,301 DEBUG Resetting dropped connection: stats.vllm.ai
+2025-06-22 05:50:51,026 DEBUG https://stats.vllm.ai:443 "POST / HTTP/1.1" 200 None
+2025-06-22 05:51:35,307 INFO 32 size batch costing time: 94.97218132019043
+2025-06-22 05:54:20,656 INFO 32 size batch costing time: 165.29305863380432
+2025-06-22 05:55:55,707 INFO 32 size batch costing time: 94.93489480018616
+2025-06-22 05:58:42,284 INFO 32 size batch costing time: 166.448792219162
+2025-06-22 05:59:56,279 INFO 32 size batch costing time: 73.87977695465088
+2025-06-22 06:00:51,126 DEBUG Resetting dropped connection: stats.vllm.ai
+2025-06-22 06:00:51,855 DEBUG https://stats.vllm.ai:443 "POST / HTTP/1.1" 200 None
+2025-06-22 06:02:48,451 INFO 32 size batch costing time: 172.046870470047
+2025-06-22 06:03:58,604 INFO 32 size batch costing time: 70.07139110565186
+2025-06-22 06:06:46,060 INFO 32 size batch costing time: 167.36833214759827
+2025-06-22 06:07:45,521 INFO 32 size batch costing time: 59.404818534851074
+2025-06-22 06:08:33,579 INFO 32 size batch costing time: 48.00176477432251
+2025-06-22 06:10:51,944 DEBUG Resetting dropped connection: stats.vllm.ai
+2025-06-22 06:10:52,726 DEBUG https://stats.vllm.ai:443 "POST / HTTP/1.1" 200 None
+2025-06-22 06:11:18,252 INFO 32 size batch costing time: 164.55424046516418
+2025-06-22 06:12:12,601 INFO 18 size batch costing time: 54.12085199356079
+2025-06-22 06:12:12,649 INFO this batch accu is: 0.31295843520782396, corr: 256.0, wrong: 562.0
+
+2025-06-22 06:12:12,673 INFO evaluating history
+2025-06-22 06:14:56,485 INFO 32 size batch costing time: 163.4433093070984
+2025-06-22 06:15:38,286 INFO 32 size batch costing time: 41.71740961074829
+2025-06-22 06:16:13,465 INFO 32 size batch costing time: 35.149362564086914
+2025-06-22 06:18:56,966 INFO 32 size batch costing time: 163.45203804969788
+2025-06-22 06:20:52,828 DEBUG Resetting dropped connection: stats.vllm.ai
+2025-06-22 06:20:53,519 DEBUG https://stats.vllm.ai:443 "POST / HTTP/1.1" 200 None
+2025-06-22 06:21:40,353 INFO 32 size batch costing time: 163.34286332130432
+2025-06-22 06:22:15,360 INFO 32 size batch costing time: 34.95345711708069
+2025-06-22 06:25:07,404 INFO 32 size batch costing time: 171.95609998703003
+2025-06-22 06:25:43,699 INFO 32 size batch costing time: 36.270840644836426
+2025-06-22 06:26:14,011 INFO 32 size batch costing time: 30.228347301483154
+2025-06-22 06:29:02,505 INFO 32 size batch costing time: 168.3949432373047
+2025-06-22 06:30:53,531 DEBUG Resetting dropped connection: stats.vllm.ai
+2025-06-22 06:30:54,302 DEBUG https://stats.vllm.ai:443 "POST / HTTP/1.1" 200 None
+2025-06-22 06:31:45,968 INFO 32 size batch costing time: 163.26358485221863
+2025-06-22 06:32:17,987 INFO 29 size batch costing time: 31.94557237625122
+2025-06-22 06:32:18,058 INFO this batch accu is: 0.30183727034120733, corr: 115.0, wrong: 266.0
+
+2025-06-22 06:32:18,069 INFO evaluating law
+2025-06-22 06:33:26,204 INFO 32 size batch costing time: 66.99248790740967
+2025-06-22 06:36:14,407 INFO 32 size batch costing time: 168.09498834609985
+2025-06-22 06:39:04,286 INFO 32 size batch costing time: 169.79837584495544
+2025-06-22 06:40:04,085 INFO 32 size batch costing time: 59.61403965950012
+2025-06-22 06:40:54,405 DEBUG Resetting dropped connection: stats.vllm.ai
+2025-06-22 06:40:55,159 DEBUG https://stats.vllm.ai:443 "POST / HTTP/1.1" 200 None
+2025-06-22 06:41:20,081 INFO 32 size batch costing time: 75.84252691268921
+2025-06-22 06:42:41,517 INFO 32 size batch costing time: 81.35041618347168
+2025-06-22 06:45:32,808 INFO 32 size batch costing time: 171.13303804397583
+2025-06-22 06:46:54,149 INFO 32 size batch costing time: 80.94159626960754
+2025-06-22 06:49:43,035 INFO 32 size batch costing time: 168.76435494422913
+2025-06-22 06:50:49,725 INFO 32 size batch costing time: 66.4009199142456
+2025-06-22 06:50:55,190 DEBUG Resetting dropped connection: stats.vllm.ai
+2025-06-22 06:50:55,980 DEBUG https://stats.vllm.ai:443 "POST / HTTP/1.1" 200 None
+2025-06-22 06:53:37,222 INFO 32 size batch costing time: 167.27276754379272
+2025-06-22 06:56:28,024 INFO 32 size batch costing time: 170.6661446094513
+2025-06-22 06:59:19,957 INFO 32 size batch costing time: 171.64041924476624
+2025-06-22 07:00:18,385 INFO 32 size batch costing time: 58.28662919998169
+2025-06-22 07:00:56,082 DEBUG Resetting dropped connection: stats.vllm.ai
+2025-06-22 07:00:56,816 DEBUG https://stats.vllm.ai:443 "POST / HTTP/1.1" 200 None
+2025-06-22 07:01:30,832 INFO 32 size batch costing time: 72.31924200057983
+2025-06-22 07:03:26,367 INFO 32 size batch costing time: 115.4421374797821
+2025-06-22 07:06:21,369 INFO 32 size batch costing time: 174.70507407188416
+2025-06-22 07:07:21,355 INFO 32 size batch costing time: 59.87497925758362
+2025-06-22 07:10:12,704 INFO 32 size batch costing time: 171.27527832984924
+2025-06-22 07:10:56,890 DEBUG Resetting dropped connection: stats.vllm.ai
+2025-06-22 07:10:57,647 DEBUG https://stats.vllm.ai:443 "POST / HTTP/1.1" 200 None
+2025-06-22 07:13:13,409 INFO 32 size batch costing time: 180.45448064804077
+2025-06-22 07:16:06,917 INFO 32 size batch costing time: 173.22320365905762
+2025-06-22 07:17:09,321 INFO 32 size batch costing time: 62.23138165473938
+2025-06-22 07:19:57,325 INFO 32 size batch costing time: 167.84845566749573
+2025-06-22 07:20:57,693 DEBUG Resetting dropped connection: stats.vllm.ai
+2025-06-22 07:20:58,467 DEBUG https://stats.vllm.ai:443 "POST / HTTP/1.1" 200 None
+2025-06-22 07:21:02,895 INFO 32 size batch costing time: 65.48084688186646
+2025-06-22 07:23:52,822 INFO 32 size batch costing time: 169.72452068328857
+2025-06-22 07:25:02,258 INFO 32 size batch costing time: 69.40005946159363
+2025-06-22 07:27:51,818 INFO 32 size batch costing time: 169.32440733909607
+2025-06-22 07:30:55,015 INFO 32 size batch costing time: 183.02069973945618
+2025-06-22 07:30:58,571 DEBUG Resetting dropped connection: stats.vllm.ai
+2025-06-22 07:30:59,258 DEBUG https://stats.vllm.ai:443 "POST / HTTP/1.1" 200 None
+2025-06-22 07:32:23,707 INFO 32 size batch costing time: 88.57049632072449
+2025-06-22 07:35:14,664 INFO 32 size batch costing time: 170.89021468162537
+2025-06-22 07:36:21,514 INFO 32 size batch costing time: 66.72050666809082
+2025-06-22 07:37:17,322 INFO 32 size batch costing time: 55.684898853302
+2025-06-22 07:38:29,574 INFO 32 size batch costing time: 72.07941770553589
+2025-06-22 07:40:00,092 INFO 32 size batch costing time: 90.31877589225769
+2025-06-22 07:40:54,499 INFO 13 size batch costing time: 54.24668836593628
+2025-06-22 07:40:54,603 INFO this batch accu is: 0.22070844686648503, corr: 243.0, wrong: 858.0
+
+2025-06-22 07:40:54,655 INFO evaluating math
+2025-06-22 07:40:59,290 DEBUG Resetting dropped connection: stats.vllm.ai
+2025-06-22 07:41:00,028 DEBUG https://stats.vllm.ai:443 "POST / HTTP/1.1" 200 None
+2025-06-22 07:41:52,686 INFO 32 size batch costing time: 57.29439878463745
+2025-06-22 07:44:40,112 INFO 32 size batch costing time: 167.36155319213867
+2025-06-22 07:47:41,059 INFO 32 size batch costing time: 180.8553876876831
+2025-06-22 07:50:23,459 INFO 32 size batch costing time: 162.08880805969238
+2025-06-22 07:51:00,095 DEBUG Resetting dropped connection: stats.vllm.ai
+2025-06-22 07:51:00,815 DEBUG https://stats.vllm.ai:443 "POST / HTTP/1.1" 200 None
+2025-06-22 07:51:09,032 INFO 32 size batch costing time: 45.552550077438354
+2025-06-22 07:54:05,224 INFO 32 size batch costing time: 176.09461450576782
+2025-06-22 07:55:26,520 INFO 32 size batch costing time: 81.02439737319946
+2025-06-22 07:58:09,308 INFO 32 size batch costing time: 162.69687604904175
+2025-06-22 07:59:32,292 INFO 32 size batch costing time: 82.87231516838074
+2025-06-22 08:01:00,921 DEBUG Resetting dropped connection: stats.vllm.ai
+2025-06-22 08:01:01,595 DEBUG https://stats.vllm.ai:443 "POST / HTTP/1.1" 200 None
+2025-06-22 08:02:18,191 INFO 32 size batch costing time: 165.8462414741516
+2025-06-22 08:05:08,549 INFO 32 size batch costing time: 170.21460580825806
+2025-06-22 08:08:06,623 INFO 32 size batch costing time: 150.20437669754028
+2025-06-22 08:11:01,697 DEBUG Resetting dropped connection: stats.vllm.ai
+2025-06-22 08:11:02,425 DEBUG https://stats.vllm.ai:443 "POST / HTTP/1.1" 200 None
+2025-06-22 08:11:05,648 INFO 32 size batch costing time: 178.98869466781616
+2025-06-22 08:12:02,255 INFO 32 size batch costing time: 56.269301891326904
+2025-06-22 08:14:44,881 INFO 32 size batch costing time: 162.60039687156677
+2025-06-22 08:17:33,358 INFO 32 size batch costing time: 168.4599347114563
+2025-06-22 08:20:20,305 INFO 32 size batch costing time: 166.8728449344635
+2025-06-22 08:20:42,202 INFO 32 size batch costing time: 21.82215714454651
+2025-06-22 08:21:02,527 DEBUG Resetting dropped connection: stats.vllm.ai
+2025-06-22 08:21:03,222 DEBUG https://stats.vllm.ai:443 "POST / HTTP/1.1" 200 None
+2025-06-22 08:23:29,751 INFO 32 size batch costing time: 167.53837990760803
+2025-06-22 08:26:23,066 INFO 32 size batch costing time: 173.25679636001587
+2025-06-22 08:27:06,263 INFO 32 size batch costing time: 43.08415985107422
+2025-06-22 08:27:53,192 INFO 32 size batch costing time: 46.915284156799316
+2025-06-22 08:30:44,163 INFO 32 size batch costing time: 170.94604778289795
+2025-06-22 08:31:03,326 DEBUG Resetting dropped connection: stats.vllm.ai
+2025-06-22 08:31:04,112 DEBUG https://stats.vllm.ai:443 "POST / HTTP/1.1" 200 None
+2025-06-22 08:33:32,979 INFO 32 size batch costing time: 168.68606853485107
+2025-06-22 08:34:13,728 INFO 32 size batch costing time: 40.63536882400513
+2025-06-22 08:36:57,217 INFO 32 size batch costing time: 163.44651532173157
+2025-06-22 08:40:06,274 INFO 32 size batch costing time: 189.01771211624146
+2025-06-22 08:41:04,189 DEBUG Resetting dropped connection: stats.vllm.ai
+2025-06-22 08:41:04,881 DEBUG https://stats.vllm.ai:443 "POST / HTTP/1.1" 200 None
+2025-06-22 08:42:49,539 INFO 32 size batch costing time: 162.88511538505554
+2025-06-22 08:45:37,588 INFO 32 size batch costing time: 168.0284023284912
+2025-06-22 08:48:27,845 INFO 32 size batch costing time: 170.20283150672913
+2025-06-22 08:51:04,894 DEBUG Resetting dropped connection: stats.vllm.ai
+2025-06-22 08:51:05,703 DEBUG https://stats.vllm.ai:443 "POST / HTTP/1.1" 200 None
+2025-06-22 08:51:17,622 INFO 32 size batch costing time: 169.68678784370422
+2025-06-22 08:51:34,591 INFO 32 size batch costing time: 16.945600271224976
+2025-06-22 08:54:26,421 INFO 32 size batch costing time: 171.81081223487854
+2025-06-22 08:55:47,666 INFO 32 size batch costing time: 81.10426259040833
+2025-06-22 08:58:34,071 INFO 32 size batch costing time: 166.33550429344177
+2025-06-22 09:01:05,728 DEBUG Resetting dropped connection: stats.vllm.ai
+2025-06-22 09:01:06,544 DEBUG https://stats.vllm.ai:443 "POST / HTTP/1.1" 200 None
+2025-06-22 09:01:19,043 INFO 32 size batch costing time: 164.88245606422424
+2025-06-22 09:04:12,382 INFO 32 size batch costing time: 173.159508228302
+2025-06-22 09:05:14,374 INFO 32 size batch costing time: 61.87114143371582
+2025-06-22 09:06:31,569 INFO 32 size batch costing time: 77.17320275306702
+2025-06-22 09:09:29,061 INFO 32 size batch costing time: 177.41170001029968
+2025-06-22 09:11:06,647 DEBUG Resetting dropped connection: stats.vllm.ai
+2025-06-22 09:11:07,390 DEBUG https://stats.vllm.ai:443 "POST / HTTP/1.1" 200 None
+2025-06-22 09:12:12,118 INFO 32 size batch costing time: 162.88150119781494
+2025-06-22 09:15:08,814 INFO 32 size batch costing time: 176.65314769744873
+2025-06-22 09:15:30,578 INFO 7 size batch costing time: 21.519997596740723
+2025-06-22 09:15:30,626 INFO this batch accu is: 0.7757216876387861, corr: 1048.0, wrong: 303.0
+
+2025-06-22 09:15:30,656 INFO evaluating other
+2025-06-22 09:16:14,313 INFO 32 size batch costing time: 43.13494277000427
+2025-06-22 09:17:09,043 INFO 32 size batch costing time: 54.72446155548096
+2025-06-22 09:17:55,870 INFO 32 size batch costing time: 46.80007481575012
+2025-06-22 09:20:41,320 INFO 32 size batch costing time: 165.35922622680664
+2025-06-22 09:21:07,492 DEBUG Resetting dropped connection: stats.vllm.ai
+2025-06-22 09:21:08,213 DEBUG https://stats.vllm.ai:443 "POST / HTTP/1.1" 200 None
+2025-06-22 09:23:25,037 INFO 32 size batch costing time: 163.59416961669922
+2025-06-22 09:24:18,194 INFO 32 size batch costing time: 53.10748100280762
+2025-06-22 09:27:02,730 INFO 32 size batch costing time: 164.48888564109802
+2025-06-22 09:29:50,840 INFO 32 size batch costing time: 168.09434938430786
+2025-06-22 09:30:42,014 INFO 32 size batch costing time: 51.117199659347534
+2025-06-22 09:31:08,315 DEBUG Resetting dropped connection: stats.vllm.ai
+2025-06-22 09:31:09,044 DEBUG https://stats.vllm.ai:443 "POST / HTTP/1.1" 200 None
+2025-06-22 09:33:38,174 INFO 32 size batch costing time: 176.0839741230011
+2025-06-22 09:34:09,566 INFO 32 size batch costing time: 31.155187129974365
+2025-06-22 09:35:07,244 INFO 32 size batch costing time: 57.6704785823822
+2025-06-22 09:37:53,882 INFO 32 size batch costing time: 166.6183841228485
+2025-06-22 09:40:37,199 INFO 32 size batch costing time: 162.91151523590088
+2025-06-22 09:41:09,146 DEBUG Resetting dropped connection: stats.vllm.ai
+2025-06-22 09:41:09,894 DEBUG https://stats.vllm.ai:443 "POST / HTTP/1.1" 200 None
+2025-06-22 09:43:19,412 INFO 32 size batch costing time: 162.15965604782104
+2025-06-22 09:46:07,128 INFO 32 size batch costing time: 167.67646098136902
+2025-06-22 09:46:28,970 INFO 32 size batch costing time: 21.82809853553772
+2025-06-22 09:49:12,942 INFO 32 size batch costing time: 163.93610072135925
+2025-06-22 09:51:09,901 DEBUG Resetting dropped connection: stats.vllm.ai
+2025-06-22 09:51:10,640 DEBUG https://stats.vllm.ai:443 "POST / HTTP/1.1" 200 None
+2025-06-22 09:52:02,749 INFO 32 size batch costing time: 169.76729774475098
+2025-06-22 09:52:24,954 INFO 32 size batch costing time: 22.16883683204651
+2025-06-22 09:55:08,287 INFO 32 size batch costing time: 163.30763220787048
+2025-06-22 09:57:51,612 INFO 32 size batch costing time: 163.28888750076294
+2025-06-22 10:00:31,144 INFO 32 size batch costing time: 159.4373586177826
+2025-06-22 10:01:10,674 DEBUG Resetting dropped connection: stats.vllm.ai
+2025-06-22 10:01:11,483 DEBUG https://stats.vllm.ai:443 "POST / HTTP/1.1" 200 None
+2025-06-22 10:01:43,144 INFO 32 size batch costing time: 71.80366444587708
+2025-06-22 10:02:12,004 INFO 32 size batch costing time: 28.776060342788696
+2025-06-22 10:04:54,678 INFO 32 size batch costing time: 162.65411901474
+2025-06-22 10:05:49,077 INFO 32 size batch costing time: 54.344568967819214
+2025-06-22 10:06:27,168 INFO 32 size batch costing time: 38.03728771209717
+2025-06-22 10:09:12,706 INFO 28 size batch costing time: 165.50316786766052
+2025-06-22 10:09:12,821 INFO this batch accu is: 0.3841991341991342, corr: 355.0, wrong: 569.0
+
+2025-06-22 10:09:12,843 INFO evaluating philosophy
+2025-06-22 10:09:48,970 INFO 32 size batch costing time: 35.8413872718811
+2025-06-22 10:10:17,095 INFO 32 size batch costing time: 28.09669828414917
+2025-06-22 10:11:11,566 DEBUG Resetting dropped connection: stats.vllm.ai
+2025-06-22 10:11:12,267 DEBUG https://stats.vllm.ai:443 "POST / HTTP/1.1" 200 None
+2025-06-22 10:13:04,878 INFO 32 size batch costing time: 167.74776649475098
+2025-06-22 10:15:48,233 INFO 32 size batch costing time: 163.2891526222229
+2025-06-22 10:16:35,705 INFO 32 size batch costing time: 30.202787399291992
+2025-06-22 10:19:19,153 INFO 32 size batch costing time: 163.43722200393677
+2025-06-22 10:20:30,330 INFO 32 size batch costing time: 71.12627410888672
+2025-06-22 10:21:06,209 INFO 32 size batch costing time: 35.78694009780884
+2025-06-22 10:21:12,343 DEBUG Resetting dropped connection: stats.vllm.ai
+2025-06-22 10:21:13,118 DEBUG https://stats.vllm.ai:443 "POST / HTTP/1.1" 200 None
+2025-06-22 10:21:39,924 INFO 32 size batch costing time: 33.65113019943237
+2025-06-22 10:22:25,838 INFO 32 size batch costing time: 45.88943409919739
+2025-06-22 10:25:10,997 INFO 32 size batch costing time: 165.12265849113464
+2025-06-22 10:25:42,469 INFO 32 size batch costing time: 31.36154866218567
+2025-06-22 10:26:43,881 INFO 32 size batch costing time: 61.362019538879395
+2025-06-22 10:27:41,638 INFO 32 size batch costing time: 57.71527695655823
+2025-06-22 10:28:08,509 INFO 32 size batch costing time: 26.86225390434265
+2025-06-22 10:28:43,282 INFO 19 size batch costing time: 34.72906541824341
+2025-06-22 10:28:43,315 INFO this batch accu is: 0.3927855711422846, corr: 196.0, wrong: 303.0
+
+2025-06-22 10:28:43,328 INFO evaluating physics
+2025-06-22 10:30:07,722 INFO 32 size batch costing time: 83.57677960395813
+2025-06-22 10:31:13,160 DEBUG Resetting dropped connection: stats.vllm.ai
+2025-06-22 10:31:13,929 DEBUG https://stats.vllm.ai:443 "POST / HTTP/1.1" 200 None
+2025-06-22 10:32:27,257 INFO 32 size batch costing time: 139.25265908241272
+2025-06-22 10:35:26,202 INFO 32 size batch costing time: 178.7632818222046
+2025-06-22 10:38:28,907 INFO 32 size batch costing time: 182.40950679779053
+2025-06-22 10:40:39,790 INFO 32 size batch costing time: 130.42888164520264
+2025-06-22 10:41:14,064 DEBUG Resetting dropped connection: stats.vllm.ai
+2025-06-22 10:41:14,823 DEBUG https://stats.vllm.ai:443 "POST / HTTP/1.1" 200 None
+2025-06-22 10:43:10,297 INFO 32 size batch costing time: 150.2414619922638
+2025-06-22 10:46:03,302 INFO 32 size batch costing time: 172.65450310707092
+2025-06-22 10:49:16,002 INFO 32 size batch costing time: 192.27071475982666
+2025-06-22 10:51:14,925 DEBUG Resetting dropped connection: stats.vllm.ai
+2025-06-22 10:51:15,607 DEBUG https://stats.vllm.ai:443 "POST / HTTP/1.1" 200 None
+2025-06-22 10:52:04,930 INFO 32 size batch costing time: 168.59045314788818
+2025-06-22 10:55:09,982 INFO 32 size batch costing time: 184.89297318458557
+2025-06-22 10:58:17,835 INFO 32 size batch costing time: 187.41422057151794
+2025-06-22 11:01:09,903 INFO 32 size batch costing time: 171.88250613212585
+2025-06-22 11:01:15,704 DEBUG Resetting dropped connection: stats.vllm.ai
+2025-06-22 11:01:16,390 DEBUG https://stats.vllm.ai:443 "POST / HTTP/1.1" 200 None
+2025-06-22 11:04:01,813 INFO 32 size batch costing time: 171.58347392082214
+2025-06-22 11:07:15,023 INFO 32 size batch costing time: 193.01726126670837
+2025-06-22 11:09:46,265 INFO 32 size batch costing time: 150.87373161315918
+2025-06-22 11:11:17,030 DEBUG Resetting dropped connection: stats.vllm.ai
+2025-06-22 11:11:17,831 DEBUG https://stats.vllm.ai:443 "POST / HTTP/1.1" 200 None
+2025-06-22 11:11:56,140 INFO 32 size batch costing time: 129.6213662624359
+2025-06-22 11:14:58,260 INFO 32 size batch costing time: 181.9952573776245
+2025-06-22 11:18:05,368 INFO 32 size batch costing time: 186.7659969329834
+2025-06-22 11:20:28,794 INFO 32 size batch costing time: 143.01148128509521
+2025-06-22 11:21:17,953 DEBUG Resetting dropped connection: stats.vllm.ai
+2025-06-22 11:21:18,712 DEBUG https://stats.vllm.ai:443 "POST / HTTP/1.1" 200 None
+2025-06-22 11:23:36,269 INFO 32 size batch costing time: 187.29691123962402
+2025-06-22 11:26:39,643 INFO 32 size batch costing time: 182.8877716064453
+2025-06-22 11:28:53,419 INFO 32 size batch costing time: 133.4206223487854
+2025-06-22 11:31:18,857 DEBUG Resetting dropped connection: stats.vllm.ai
+2025-06-22 11:31:19,600 DEBUG https://stats.vllm.ai:443 "POST / HTTP/1.1" 200 None
+2025-06-22 11:31:57,656 INFO 32 size batch costing time: 184.11545515060425
+2025-06-22 11:34:59,200 INFO 32 size batch costing time: 181.1313009262085
+2025-06-22 11:37:54,064 INFO 32 size batch costing time: 174.61743688583374
+2025-06-22 11:40:56,786 INFO 32 size batch costing time: 182.43965864181519
+2025-06-22 11:41:19,605 DEBUG Resetting dropped connection: stats.vllm.ai
+2025-06-22 11:41:20,421 DEBUG https://stats.vllm.ai:443 "POST / HTTP/1.1" 200 None
+2025-06-22 11:44:02,666 INFO 32 size batch costing time: 185.28969144821167
+2025-06-22 11:46:38,084 INFO 32 size batch costing time: 154.949138879776
+2025-06-22 11:49:18,571 INFO 32 size batch costing time: 160.29827284812927
+2025-06-22 11:51:20,523 DEBUG Resetting dropped connection: stats.vllm.ai
+2025-06-22 11:51:22,245 DEBUG https://stats.vllm.ai:443 "POST / HTTP/1.1" 200 None
+2025-06-22 11:52:19,934 INFO 32 size batch costing time: 180.99746108055115
+2025-06-22 11:54:21,358 INFO 32 size batch costing time: 121.11327052116394
+2025-06-22 11:57:14,410 INFO 32 size batch costing time: 172.9109661579132
+2025-06-22 12:00:05,973 INFO 32 size batch costing time: 171.3763473033905
+2025-06-22 12:01:22,307 DEBUG Resetting dropped connection: stats.vllm.ai
+2025-06-22 12:01:23,048 DEBUG https://stats.vllm.ai:443 "POST / HTTP/1.1" 200 None
+2025-06-22 12:02:23,912 INFO 32 size batch costing time: 137.536612033844
+2025-06-22 12:03:38,136 INFO 32 size batch costing time: 73.94210863113403
+2025-06-22 12:06:50,392 INFO 32 size batch costing time: 192.15249967575073
+2025-06-22 12:09:43,288 INFO 32 size batch costing time: 172.3956286907196
+2025-06-22 12:11:23,151 DEBUG Resetting dropped connection: stats.vllm.ai
+2025-06-22 12:11:24,881 DEBUG https://stats.vllm.ai:443 "POST / HTTP/1.1" 200 None
+2025-06-22 12:11:37,089 INFO 32 size batch costing time: 113.64569115638733
+2025-06-22 12:14:50,475 INFO 32 size batch costing time: 193.23652863502502
+2025-06-22 12:17:45,303 INFO 32 size batch costing time: 174.24448943138123
+2025-06-22 12:20:20,091 INFO 19 size batch costing time: 154.54539251327515
+2025-06-22 12:20:20,447 INFO this batch accu is: 0.7621247113163973, corr: 990.0, wrong: 309.0
+
+2025-06-22 12:20:20,534 INFO evaluating psychology
+2025-06-22 12:20:56,765 INFO 32 size batch costing time: 35.6915762424469
+2025-06-22 12:21:24,982 DEBUG Resetting dropped connection: stats.vllm.ai
+2025-06-22 12:21:25,710 DEBUG https://stats.vllm.ai:443 "POST / HTTP/1.1" 200 None
+2025-06-22 12:23:40,289 INFO 32 size batch costing time: 163.51204919815063
+2025-06-22 12:24:16,305 INFO 32 size batch costing time: 36.00926947593689
+2025-06-22 12:27:01,385 INFO 32 size batch costing time: 165.0345766544342
+2025-06-22 12:28:31,682 INFO 32 size batch costing time: 90.26773858070374
+2025-06-22 12:29:10,657 INFO 32 size batch costing time: 38.946173906326294
+2025-06-22 12:30:28,543 INFO 32 size batch costing time: 77.82638907432556
+2025-06-22 12:31:02,950 INFO 32 size batch costing time: 34.38654685020447
+2025-06-22 12:31:25,762 DEBUG Resetting dropped connection: stats.vllm.ai
+2025-06-22 12:31:26,489 DEBUG https://stats.vllm.ai:443 "POST / HTTP/1.1" 200 None
+2025-06-22 12:33:46,837 INFO 32 size batch costing time: 163.85491156578064
+2025-06-22 12:36:36,140 INFO 32 size batch costing time: 169.13105821609497
+2025-06-22 12:37:19,592 INFO 32 size batch costing time: 43.43764877319336
+2025-06-22 12:37:54,483 INFO 32 size batch costing time: 34.85886907577515
+2025-06-22 12:40:40,075 INFO 32 size batch costing time: 165.54628586769104
+2025-06-22 12:41:26,594 DEBUG Resetting dropped connection: stats.vllm.ai
+2025-06-22 12:41:27,393 DEBUG https://stats.vllm.ai:443 "POST / HTTP/1.1" 200 None
+2025-06-22 12:43:29,809 INFO 32 size batch costing time: 169.67387127876282
+2025-06-22 12:44:16,179 INFO 32 size batch costing time: 46.33913969993591
+2025-06-22 12:47:04,241 INFO 32 size batch costing time: 168.04484677314758
+2025-06-22 12:47:42,889 INFO 32 size batch costing time: 38.59715819358826
+2025-06-22 12:48:36,061 INFO 32 size batch costing time: 53.13017797470093
+2025-06-22 12:51:22,013 INFO 32 size batch costing time: 165.88548111915588
+2025-06-22 12:51:27,493 DEBUG Resetting dropped connection: stats.vllm.ai
+2025-06-22 12:51:28,167 DEBUG https://stats.vllm.ai:443 "POST / HTTP/1.1" 200 None
+2025-06-22 12:54:06,743 INFO 32 size batch costing time: 164.63968420028687
+2025-06-22 12:55:04,184 INFO 32 size batch costing time: 57.39817023277283
+2025-06-22 12:55:44,749 INFO 32 size batch costing time: 40.501240968704224
+2025-06-22 12:58:28,771 INFO 32 size batch costing time: 164.00744676589966
+2025-06-22 12:59:09,988 INFO 32 size batch costing time: 41.19755721092224
+2025-06-22 12:59:59,814 INFO 30 size batch costing time: 49.76487374305725
+2025-06-22 12:59:59,898 INFO this batch accu is: 0.5175438596491229, corr: 413.0, wrong: 385.0
+

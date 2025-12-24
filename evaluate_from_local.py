@@ -14,8 +14,9 @@ import sys
 from datasets import load_dataset
 
 choices = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P"]
-max_model_length = 4096
-max_new_tokens = 2048
+max_model_length = 16384
+max_new_tokens = 14000
+temperature = 0.6
 random.seed(12345)
 
 def load_mmlu_pro():
@@ -31,7 +32,7 @@ def load_model():
                 tensor_parallel_size=torch.cuda.device_count(),
                 max_model_len=max_model_length,
                 trust_remote_code=True)
-    sampling_params = SamplingParams(temperature=0, max_tokens=max_new_tokens,
+    sampling_params = SamplingParams(temperature=temperature, max_tokens=max_new_tokens,
                                         stop=["Question:"])
     tokenizer = transformers.AutoTokenizer.from_pretrained(args.model, trust_remote_code=True)
     return (llm, sampling_params), tokenizer
@@ -78,12 +79,33 @@ def format_cot_example(example, including_answer=True):
                                                      "Answer: Let's think step by step.")
         prompt += cot_content + "\n\n"
     else:
-        prompt += "Answer: Let's think step by step."
+        prompt += "<｜Assistant｜>\n<think>\n"
     return prompt
 
+def format_nothinking_example(example):
+    prompt = "Question:\n"
+    question = example["question"]
+    options = example["options"]
+    prompt += question + "\n"
+    prompt += "Options:\n"
+    for i, opt in enumerate(options):
+        prompt += "{}. {}\n".format(choices[i], opt)
+    prompt += "<｜Assistant｜>\n<think>\nOkay I have finished thinking.\n</think>\n"
+    return prompt
 
-def generate_cot_prompt(val_df, curr, k):
-    prompt = ""
+def format_joint_thinking_middle_open_example(example):
+    prompt = "Question:\n"
+    question = example["question"]
+    options = example["options"]
+    prompt += question + "\n"
+    prompt += "Options:\n"
+    for i, opt in enumerate(options):
+        prompt += "{}. {}\n".format(choices[i], opt)
+    prompt += "<｜Assistant｜>\n<think>\nOkay I have finished thinking.\n</think>\n"
+    return prompt
+    
+def generate_cot_prompt(val_df, curr, k, type):
+    prompt = "<｜User｜>"
     with open(f"cot_prompt_lib/initial_prompt.txt", "r") as fi:
         for line in fi.readlines():
             prompt += line
@@ -91,9 +113,18 @@ def generate_cot_prompt(val_df, curr, k):
     val_df = select_by_category(val_df, subject)
     val_df = val_df[: k]
     prompt = prompt.replace("{$}", subject) + "\n"
-    for example in val_df:
-        prompt += format_cot_example(example, including_answer=True)
-    prompt += format_cot_example(curr, including_answer=False)
+    #for example in val_df:
+    #    prompt += format_cot_example(example, including_answer=True)
+    if type == "thinking":
+        prompt += format_cot_example(curr, including_answer=False)
+    elif type == "nothinking":
+        prompt += format_nothinking_example(curr)
+    elif type == "joint-thinking-middle-open":
+        if args.joint_reference is None:
+            return ValueError("joint_reference must be provided for joint thinking evaluation.")
+        prompt += format_joint_thinking_middle_open_example(curr)
+    else:
+        raise ValueError(f"Unsupported prompt_type: {type}")
     return prompt
 
 
@@ -124,17 +155,19 @@ def extract_final(text):
         return None
 
 
-def batch_inference(llm, sampling_params, inference_batch):
-    start = time.time()
-    outputs = llm.generate(inference_batch, sampling_params)
-    logging.info(str(len(inference_batch)) + "size batch costing time: " + str(time.time() - start))
+def batch_inference(llm, sampling_params, inference_batch, batch_size=8):
     response_batch = []
     pred_batch = []
-    for output in outputs:
-        generated_text = output.outputs[0].text
-        response_batch.append(generated_text)
-        pred = extract_answer(generated_text)
-        pred_batch.append(pred)
+    for i in range(0, len(inference_batch), batch_size):
+        sub_batch = inference_batch[i: i + batch_size]
+        start = time.time()
+        outputs = llm.generate(sub_batch, sampling_params)
+        logging.info(f"{len(sub_batch)} size batch costing time: {time.time() - start}")
+        for output in outputs:
+            generated_text = output.outputs[0].text
+            response_batch.append(generated_text)
+            pred = extract_answer(generated_text)
+            pred_batch.append(pred)
     return pred_batch, response_batch
 
 
@@ -161,7 +194,7 @@ def save_res(res, output_path):
 
 
 @torch.no_grad()
-def eval_cot(subject, model, tokenizer, val_df, test_df, output_path):
+def eval_cot(subject, model, tokenizer, val_df, test_df, output_path, small_batch_size, type):
     llm, sampling_params = model
     global choices
     logging.info("evaluating " + subject)
@@ -173,7 +206,7 @@ def eval_cot(subject, model, tokenizer, val_df, test_df, output_path):
         prompt_length_ok = False
         prompt = None
         while not prompt_length_ok:
-            prompt = generate_cot_prompt(val_df, curr, k)
+            prompt = generate_cot_prompt(val_df, curr, k, type)
             inputs = tokenizer(prompt, return_tensors="pt")
             inputs = {key: value.cuda() for key, value in inputs.items()}
             length = len(inputs["input_ids"][0])
@@ -181,8 +214,10 @@ def eval_cot(subject, model, tokenizer, val_df, test_df, output_path):
                 prompt_length_ok = True
             k -= 1
         inference_batches.append(prompt)
-
-    pred_batch, response_batch = batch_inference(llm, sampling_params, inference_batches)
+    
+    # for debugging
+    print(f"one prompt example:\n{inference_batches[0]}")
+    pred_batch, response_batch = batch_inference(llm, sampling_params, inference_batches, small_batch_size)
     res = []
     for j, curr in enumerate(test_df):
         curr["pred"] = pred_batch[j]
@@ -226,7 +261,7 @@ def main():
         test_df = select_by_category(full_test_df, subject)
         val_df = select_by_category(full_val_df, subject)
         output_path = os.path.join(save_result_dir, "{}.json".format(subject))
-        acc, corr_count, wrong_count = eval_cot(subject, model, tokenizer, val_df, test_df, output_path)
+        acc, corr_count, wrong_count = eval_cot(subject, model, tokenizer, val_df, test_df, output_path, args.small_batch_size, args.type)
         sta_dict[subject]["corr"] = corr_count
         sta_dict[subject]["wrong"] = wrong_count
         sta_dict[subject]["accu"] = acc
@@ -258,6 +293,10 @@ if __name__ == "__main__":
                         default="eval_record_collection.csv")
     parser.add_argument("--gpu_util", "-gu", type=str, default="0.8")
     parser.add_argument("--model", "-m", type=str, default="meta-llama/Llama-2-7b-hf")
+    parser.add_argument("--small_batch_size", "-sbs", type=int, default=8,
+                        help="batch size for inference, default is 8")
+    parser.add_argument("--type", type=str, choices=["thinking", "nothinking", "joint-thinking-middle-open"], default="thinking")
+    parser.add_argument("--joint_reference", type=str, required=False, default=None, help="Path to reference file for joint thinking evaluation")
 
     args = parser.parse_args()
     os.makedirs(args.save_dir, exist_ok=True)

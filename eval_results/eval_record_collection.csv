@@ -1,0 +1,6 @@
+DeepSeek-R1-Distill-Qwen-7B,CoT,all,06-20_22-01,0.5732214095268267
+AdaptThink-7B-delta0.05,CoT,all,06-21_22-28,0.5707280584632041
+DeepSeek-R1-Distill-Qwen-7B-nothinking,CoT,all,06-22_17-14,0.36677194145887865
+DeepSeek-R1-Distill-Qwen-1.5B-nothinking,CoT,all,06-24_12-44,0.32255651593063855
+AdaptThink-1.5B-delta0.05,CoT,all,06-24_12-44,0.35771276592771667
+DeepSeek-R1-Distill-Qwen-1.5B,CoT,all,06-24_11-34,0.35605053188530167
